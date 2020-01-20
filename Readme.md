@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Мага](https://up.htmlacademy.ru/htmlcss/27/user/240087).
-* Наставник: 'Алим Нагоев'(https://htmlacademy.ru/profile/id911531).
+* Наставник: [Алим Нагоев](https://htmlacademy.ru/profile/id911531).
 
 ---
 
