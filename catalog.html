@@ -39,25 +39,82 @@
         <h1>
             Магазин готовых шаблонов
         </h1>
-        <!--Форма-->
-        <section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-        <ul class="filter-list">
-            <p class="filter-text">Сетка:</p>
-            <li class="filter-item">Адаптивная</li>
-            <li class="filter-item">Фиксированная</li>
-            <li class="filter-item">Резиновая</li>
-        </ul>
-        <!-- Какой класс тут добавлять?
-        <ul> 
-            <p>Особенности:</p>
-            <li>Слайдер</li>
-            <li>Блок преимуществ</li>
-            <li>Новости</li>
-            <li>Галерея</li>
-            <li>Корзина</li>
-        </ul>
-      -->
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="price-filter">
+            <legend>Стоимость:</legend>
+            <div class="range-control">
+              <div class="progress">
+                <div class="current-progress">
+                  <div class="progress-button-wrapper">
+                    <button type="button"><span class="visually-hidden">стоимость от</span></button>
+                  </div>
+                  <div class="progress-button-wrapper">
+                    <button type="button"><span class="visually-hidden">стоимость до</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="range-display">
+              <label>От
+                <input type="text" name="min-price" value="0">
+              </label>
+              <label>До
+                <input type="text" name="max-price" value="15000">
+              </label>
+            </p>
+          </fieldset>
+          <fieldset class="grid-filter">
+            <legend>Сетка:</legend>
+            <ul class="grid-list">
+              <li>
+                <input class="filter-input filter-input-radio visually-hidden" id="adaptive" type="radio" name="grid"
+                  value="adaptive" checked="">
+                <label for="adaptive">Адаптивная</label>
+              </li>
+              <li>
+                <input class="filter-input filter-input-radio visually-hidden" id="fixed" type="radio" name="grid"
+                  value="fixed">
+                <label for="fixed">Фиксированная</label>
+              </li>
+              <li>
+                <input class="filter-input filter-input-radio visually-hidden" id="fluid" type="radio" name="grid"
+                  value="fluid" disabled="">
+                <label for="fluid">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="features-filter">
+            <legend>Особенности:</legend>
+            <ul class="features-list">
+              <li>
+                <input class="filter-input filter-input-checkbox visually-hidden" id="slider" type="checkbox"
+                  name="slider" checked="">
+                <label for="slider">Слайдер</label>
+              </li>
+              <li>
+                <input class="filter-input filter-input-checkbox visually-hidden" id="advantages-block" type="checkbox"
+                  name="advantages-block">
+                <label for="advantages-block">Блок преимуществ</label>
+              </li>
+              <li>
+                <input class="filter-input filter-input-checkbox visually-hidden" id="news" type="checkbox" name="news"
+                  checked="">
+                <label for="news">Новости</label>
+              </li>
+              <li>
+                <input class="filter-input filter-input-checkbox visually-hidden" id="gallery" type="checkbox"
+                  name="gallery">
+                <label for="gallery">Галерея</label>
+              </li>
+              <li>
+                <input class="filter-input filter-input-checkbox visually-hidden" id="cart" type="checkbox" name="cart"
+                  disabled="">
+                <label for="cart">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button">Показать</button>
+        </form>
         <section class="catalog">
           <ul class="catalog-list">
             <li class="catalog-item">
@@ -98,3 +155,28 @@
           </ul>
         </section>
     </main>
+    <footer>
+      <ul class="social">
+        <li class="social-item">
+          <a href="#" class="social-link">
+            <img src="img/vk-icon.png" alt="VK" class="social-ico">          
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="#" class="social-link">
+            <img src="img/fb-icon.png" alt="Facebook" class="social-ico">          
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="#" class="social-link">
+            <img src="img/insta-icon.png" alt="Instagram" class="social-ico">          
+          </a>
+        </li>
+      </ul>
+      
+      <p>Давайте дружить, это выгодно!</p>
+      
+      <p>Скидка 10% для друзей из социальных сетей</p>
+    </footer>
+    </body>
+    </html>
