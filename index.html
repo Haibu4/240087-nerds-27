@@ -4,105 +4,169 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
   </head>
+  
   <body>
-    <header>
-      <nav>
-        <a href="index.html"> <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип нердс"></a>
-        <ul>
-          <li><a href="index.html">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
+    <header class="header">
+      <nav class="nav">
+        <a class="logo"> 
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип нердс">
+        </a>
+        <ul class="menu">
+          <li class="menu-item">
+            <a class="menu-link" href="index.html">Студия</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#">Клиенты</a>
+          </li>
+          <li class="menu-item">
+            <a class ="menu-link" href="catalog.html">Магазин</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#">Контакты</a>
+          </li>
         </ul>
-        <ul>
-          <li>
-            <a href="#" >Корзина</a>
+        <ul class="user-action">
+          <li class="user-action-item">
+            <a href="#" class="user-action-link" >
+              <img src="#" alt="#" class="user-action-ico"/>
+            </a>
+            <button type="button">Корзина</button>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <h1>Нердс - мы веб-студия, которая создает веб-сайты</h1>
-      <div>
-        <ul><li><h2>Долго, дорого,<br> скрупулезно.</h2></li>
-        <p>Математически выверенный дизайн<br> 
-          для вашего сайта или мобильного приложения. </p>
-          <a href="#">Узнать больше</a></ul>
-        </div>
-          <section>
-            <h2>
+      <h1 class="visually-hidden">
+        Нердс - мы веб-студия, которая создает веб-сайты
+      </h1>
+      <section class="header-slider">
+        <ul class="slider">
+          <li class="slide">
+            <h2 class="slide-headline">
+              Долго, дорого,<br> 
+              скрупулезно.
+            </h2> 
+            <p class="slide-text">
+              Математически выверенный дизайн<br> 
+              для вашего сайта или мобильного приложения. 
+            </p>
+          <a href="#" class="btn">Узнать больше</a>
+          </li>
+       </ul>
+      </section>
+          <section class="services">
+            <h2 visually-hidden>
               Наши услуги
             </h2>
-          <ul>
-            <li>
-              <img src="img/advantage-picture-red.png">
-              <h3>ВЕБ-САЙТЫ</h3>
-              <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-              <a href="#">Заказать</a>
+          <ul class="services-list">
+            <li class="services-item">
+              <img class="services-image" src="img/advantage-picture-red.png">
+              <h3 class="services-title">ВЕБ-САЙТЫ</h3>
+              <p class="services-text">
+                Мир никогда не будет прежним после того как увидит ваш сайт!
+              </p>
+              <a href="#" type="button">Заказать</a>
             </li>
-            <li>
-              <img src="img/advantage-picture-green.png">
-              <h3>Приложения</h3>
-              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-              <a href="#">Заказать</a>
+            <li class="services-item">
+              <img class="services-image" src="img/advantage-picture-green.png">
+              <h3 class="services-title">Приложения</h3>
+              <p class="services-text">
+                Покорите топ-10 приложений в AppStore и Google Play
+              </p>
+              <a href="#" type="button">Заказать</a>
             </li>
-            <li>
-              <img src="img/advantage-picture-yellow.png">
-              <h3>Презентации</h3>
-              <p>Вы даже не подозреваете,<br> 
+            <li class="services-item">
+              <img class="services-image" src="img/advantage-picture-yellow.png">
+              <h3 class="services-title">Презентации</h3>
+              <p class="services-text">
+                Вы даже не подозреваете,<br> 
                 насколько вы изумительны!</p>
-              <a href="#">Заказать</a>
+              <a href="#" type="button">Заказать</a>
             </li>
           </ul>
           </section>
-          <section>
-            <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара. </h2>
-              <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-                превыше креатива. Работаем не покладая рук, как роботы.</p>
-                <h3>Выполняем заказы на разработку</h3>
-                <ul>
-                  <li>
+           <section class="about">
+            <div class="about-item">
+              <h2 class="headline">
+              Мы — маленькая, но гордая<br> 
+              дизайн-студия из Краснодара. 
+            </h2>
+              <p class="about-text">
+                Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+                превыше креатива. Работаем не покладая рук, как роботы.
+              </p>
+                <h4 class="headline">Выполняем заказы на разработку:</h4>
+                <ul class="about-list">
+                  <li class="about-list-item">
                     Веб-сайтов любой сложности
                   </li>
-                  <li>
+                  <li class="about-list-item">
                     Мобильных приложений для iOS и Android
                   </li>
-                  <li>
+                  <li class="about-list-item">
                     Слайдшоу и видео для корпоративных презентаций 
                   </li>
                 </ul>
-          </section>
-          <section>
-          <h3>с 2004 года любим точность во всем:</h3>
-          <ul>
-            <li>
-              <p>146<sup>%</sup>
-              Уровень
-                самоотдачи</p>
+            </div>
+            <div class="about-item">
+              <img class="about-ico" src="img/nerds-illustration.png" alt="">
+              <h4 class="about-lead">с 2004 года любим точность во всем:</h4>
+               <ul about-stats>
+                 <li>
+                   <span class="number">146<sup>%</sup></span>
+                    <span class="name">Уровень самоотдачи</span>
+                  </li>
+                  <li>
+                    <span class="number">100<sup>%</sup></span>
+                    <span class="name">Соблюдение сроков</span>
             </li>
             <li>
-              <p>100<sup>%</sup>
-              Соблюдение 
-                сроков</p>
+              <span class="number">50<sup>%</sup></span>
+              <span class="name">Минимальная предоплата</span>
             </li>
-            <li>
-              <p>50<sup>%</sup>
-              Минимальная
-                предоплата</p>
-            </li>
-          </ul>
-        </section>
-        <div>
-          <ul>
-            <h2>Наши работы</h2> 
-          <li></li>
-          <li></li>
-          <li></li>
           </ul>
         </div>
+        </section>
+        <section class="works-container">
+          <h2 class="visually-hidden">Наши работы</h2> 
+          <ul class="works-list">  
+            <li class="works-item">
+              <a class="works-link" href="#">
+              <img class="works-image" src="img/logo-1.png.png" alt="">
+              </a>
+             </li>
+          
+             <li>
+             <a class="works-link" href="#">
+               <img class="works-image" src="img/logo-2.png.png" alt="">          
+             </a>
+             </li>
+          
+              <li>
+              <a class="works-link" href="#">
+                <img class="works-image" src="img/logo-3.png.png" alt="">          
+              </a>
+             </li>
+          
+             <li>
+              <a class="works-link" href="#">
+                <img class="works-image" src="img/logo-4.png.png" alt="">          
+              </a>
+          </li>
+          </ul>
+        </section>
     </main>
     <footer>
-      <h2>Давайте дружить, это выгодно!</h2>
+      <ul class="social">
+        <li class="social-item">
+          <a href="" class="social-link">
+            <img src="" alt="" class="social-ico">          
+          </a>
+        </li>
+      </ul>
+      
+      <p>Давайте дружить, это выгодно!</p>
+      
       <p>Скидка 10% для друзей из социальных сетей</p>
     </footer>
   </body>
